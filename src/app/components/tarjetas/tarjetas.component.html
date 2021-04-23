@@ -1,0 +1,12 @@
+<div class="card-columns m-5 animated fadeIn">
+    <div (click)="abrirNoticia(noticia)" *ngFor="let noticia of noticias" class="card" style="width: 20rem; height: 27rem;" >
+        <img [src]="noticia.urlToImage" class="card-img-top" alt="noticia">
+        <div class="card-body">
+            <h5 class="card-title">{{noticia.title}}</h5>
+            <p class="card-text"> {{ noticia.description | slice:0:150 }}...</p>
+            <div class="d-flex justify-content-end">
+                <a href={{noticia.url}} class="btn btn-info">Abrir</a>
+            </div>
+        </div>
+    </div>
+</div>

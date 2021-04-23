@@ -1,0 +1,17 @@
+<form class="login-form" (ngSubmit)="login()" [formGroup]="form">
+    <p class="login-text">
+      <span class="fa-lg">
+        My News Feed
+      </span>
+    </p>
+    <input type="email"  formControlName="email" class="login-username" autofocus="true" required="true" placeholder="Email"/>
+    <input type="password"  formControlName="password" class="login-password mb-5" required="true" placeholder="Contraseña" />
+    <input type="submit" name="Login" value="Login" class="login-submit" />
+    <p class="login-text2">
+        or
+    </p>
+    <input type="submit" name="SingUp" value="Sing Up" class="login-submit" />
+</form>
+<a href="#" class="login-forgot-pass">¿Olvidaste tu contraseña?</a>
+<div class="underlay-photo"></div>
+<div class="underlay-black"></div> 
